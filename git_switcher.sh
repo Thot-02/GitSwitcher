@@ -20,7 +20,7 @@ function set_sec {
   git config ${SCOPE} user.name $GIT_SEC_ACCOUNT_USERNAME;
   git config ${SCOPE} user.email $GIT_SEC_ACCOUNT_EMAIL;
   git config ${SCOPE} user.password $GIT_SEC_ACCOUNT_PASSWORD;
-  echo -e "${GREEN}[+]${RESET} SECONDARY ACCOUNT ${GREEN}->${RESET} $GIT_MAIN_ACCOUNT_USERNAME${GREEN} loaded with success to ${RESET}${SCOPE/--/}${GREEN} scope!${RESET}";
+  echo -e "${GREEN}[+]${RESET} SECONDARY ACCOUNT ${GREEN}->${RESET} $GIT_SEC_ACCOUNT_USERNAME${GREEN} loaded with success to ${RESET}${SCOPE/--/}${GREEN} scope!${RESET}";
   exit 0;
 }
 
