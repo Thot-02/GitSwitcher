@@ -61,7 +61,7 @@ function help {
   echo " | |  _| | __\___ \ \ /\ / / | __/ __| '_ \ / _ \ '__|"
   echo " | |_| | | |_ ___) \ V  V /| | || (__| | | |  __/ |   "
   echo "  \____|_|\__|____/ \_/\_/ |_|\__\___|_| |_|\___|_|   "
-  echo -e "                                     CODED BY: Thot-02\n\n"
+  echo -e "                                     CODED BY: Toth-02\n\n"
 
   echo "Usage: git_switcher <[-h] [-l] [-g] [-s] [-main] [-sec]>  <[-main] [-sec]>";
   echo -e "\n\nFirst argument:";
