@@ -19,11 +19,11 @@ Now you can simply type **git_switcher** in terminal to run the script!
 Update of **GitSwitcher** can be done in 2 ways: 
 <br>
 * ## Manual
-  - Edit your terminal "profile file" (`.bash_profile` or `.profile`) and change the envinroment variables.
+  - Edit your terminal "profile file" (`.bash_profile`, `.profile` or `.bashrc`) and change the envinroment variables.
 * ## Automatic
   - Edit `install_and_update.sh` **CONFIG** part.
   - `chmod +x install_and_update.sh`
-  - `./install_and_update.sh`
+  - `sudo ./install_and_update.sh`
   
 ## ⚠️ Attention
 ### Environment variables used by this program will cointain your git account informations, them can be accessed from anyone that can access to your currently user account, so make sure to logout when you will have a ☕ break!
