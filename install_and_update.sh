@@ -31,12 +31,16 @@ PROFILE_FILENAME="";
 if [ -a "${HOME}/.bash_profile" ]; then
   PROFILE_FILENAME="${HOME}/.bash_profile";
 else
-  if [ -a "${HOME}/.profile" ]; then
-    PROFILE_FILENAME="${HOME}/.profile";
-  else
-    # Non supported terminal is used.
-    echo -e "${RED}[ERROR] Current terminal is not supported!${RESET}" 1>&2;
-    exit 1;
+  if [ -a "${HOME}/.bashrc" ]; then
+    PROFILE_FILENAME="${HOME}/.bashrc";
+  else	
+    if [ -a "${HOME}/.profile" ]; then
+      PROFILE_FILENAME="${HOME}/.profile";
+    else
+      # Non supported terminal is used.
+      echo -e "${RED}[ERROR] Current terminal is not supported!${RESET}" 1>&2;
+      exit 1;
+    fi
   fi
 fi
 
@@ -106,7 +110,7 @@ echo "  / ___(_) |_/ ___|_      _(_) |_ ___| |__   ___ _ __ "
 echo " | |  _| | __\___ \ \ /\ / / | __/ __| '_ \ / _ \ '__|"
 echo " | |_| | | |_ ___) \ V  V /| | || (__| | | |  __/ |   "
 echo "  \____|_|\__|____/ \_/\_/ |_|\__\___|_| |_|\___|_|   "
-echo -e "                                     CODED BY: Thot-02\n\n"
+echo -e "                                     CODED BY: Toth-02\n\n"
 
 # Check if git_switcher is already inside system binaries.
 if [ -f "/usr/local/bin/${PROCESS_NAME}" ]; then
